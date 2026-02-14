@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff7f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------- HEADER & NAV ---------- */
+header {
+  background: #f3c6d3;
+  padding: 15px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  color: #7a1f3d;
+  font-size: 24px;
+}
+
+nav div {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #7a1f3d;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #7a1f3d;
+}
+
+section h3 {
+  margin-top: 20px;
+  color: #5e1730;
+}
+
+section p,
+section li {
+  font-size: 16px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+
+/* ---------- BUTTON ---------- */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #7a1f3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #5e1730;
+}
+
+/* ---------- FORM ---------- */
+form input,
+form textarea,
+form button {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #f3c6d3;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* =================================================
+   📱 MOBILE RESPONSIVE
+   ================================================= */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav div {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav a {
+    padding: 8px 0;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 26px;
+  }
+
+  nav h1 {
+    font-size: 22px;
+  }
+}
+
+/* =================================================
+   📱 EXTRA SMALL DEVICES
+   ================================================= */
+
+@media (max-width: 480px) {
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  section p,
+  section li {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
